@@ -1,0 +1,137 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1757161594
+<< metal1 >>
+rect 0 870 1630 1180
+rect 0 320 230 870
+rect 310 836 420 840
+rect 310 784 339 836
+rect 391 784 420 836
+rect 310 690 420 784
+rect 1150 836 1260 840
+rect 1150 784 1179 836
+rect 1231 784 1260 836
+rect 450 746 790 750
+rect 450 694 494 746
+rect 546 694 594 746
+rect 646 694 704 746
+rect 756 694 790 746
+rect 450 690 790 694
+rect 870 746 1070 750
+rect 870 694 884 746
+rect 936 694 984 746
+rect 1036 694 1070 746
+rect 870 690 1070 694
+rect 1150 690 1260 784
+rect 1290 746 1370 750
+rect 1290 694 1304 746
+rect 1356 694 1370 746
+rect 1290 690 1370 694
+rect 450 510 510 690
+rect 730 510 790 690
+rect 1010 510 1070 690
+rect 1290 510 1350 690
+rect 300 320 430 490
+rect 580 320 710 490
+rect 860 320 990 490
+rect 1140 320 1270 490
+rect 1400 320 1630 870
+rect 0 0 1630 320
+<< via1 >>
+rect 339 784 391 836
+rect 1179 784 1231 836
+rect 494 694 546 746
+rect 594 694 646 746
+rect 704 694 756 746
+rect 884 694 936 746
+rect 984 694 1036 746
+rect 1304 694 1356 746
+<< metal2 >>
+rect 310 836 1630 840
+rect 310 784 339 836
+rect 391 784 1179 836
+rect 1231 784 1630 836
+rect 310 780 1630 784
+rect 0 746 1370 750
+rect 0 694 494 746
+rect 546 694 594 746
+rect 646 694 704 746
+rect 756 694 884 746
+rect 936 694 984 746
+rect 1036 694 1304 746
+rect 1356 694 1370 746
+rect 0 690 1370 694
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_0
+timestamp 1757161594
+transform 0 1 1517 1 0 1028
+box -184 -117 184 117
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_1
+timestamp 1757161594
+transform 0 1 1237 1 0 1028
+box -184 -117 184 117
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_2
+timestamp 1757161594
+transform 0 1 397 1 0 1028
+box -184 -117 184 117
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_3
+timestamp 1757161594
+transform 0 1 117 1 0 1028
+box -184 -117 184 117
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_4
+timestamp 1757161594
+transform 0 1 677 1 0 1028
+box -184 -117 184 117
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_5
+timestamp 1757161594
+transform 0 1 957 1 0 1028
+box -184 -117 184 117
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_6
+timestamp 1757161594
+transform 0 1 1237 1 0 158
+box -184 -117 184 117
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_7
+timestamp 1757161594
+transform 0 1 1517 1 0 158
+box -184 -117 184 117
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_8
+timestamp 1757161594
+transform 0 1 677 1 0 158
+box -184 -117 184 117
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_9
+timestamp 1757161594
+transform 0 1 957 1 0 158
+box -184 -117 184 117
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_10
+timestamp 1757161594
+transform 0 1 397 1 0 158
+box -184 -117 184 117
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_11
+timestamp 1757161594
+transform 0 1 117 1 0 158
+box -184 -117 184 117
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_12
+timestamp 1757161594
+transform 0 1 117 1 0 588
+box -184 -117 184 117
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_13
+timestamp 1757161594
+transform 0 1 397 1 0 588
+box -184 -117 184 117
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_14
+timestamp 1757161594
+transform 0 1 677 1 0 588
+box -184 -117 184 117
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_15
+timestamp 1757161594
+transform 0 1 957 1 0 588
+box -184 -117 184 117
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_16
+timestamp 1757161594
+transform 0 1 1237 1 0 588
+box -184 -117 184 117
+use sky130_fd_pr__nfet_01v8_lvt_LTPL8U  sky130_fd_pr__nfet_01v8_lvt_LTPL8U_17
+timestamp 1757161594
+transform 0 1 1517 1 0 588
+box -184 -117 184 117
+<< end >>
