@@ -1,0 +1,157 @@
+** sch_path: /foss/designs/Opamp_Design/src/opamp_with_external_current_source.sch
+.subckt opamp_with_external_current_source Rgm Vop Vm en_1 Vdd Vss Vref en_2 Vom Vp
+*.PININFO Vdd:I Vss:I Vop:O Vom:O Vm:I Vp:I Vref:I Rgm:I en_1:I en_2:I
+XM32 NBias PBias Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=5 nf=1 m=4
+XM33 NBias NBias Vss Vss sky130_fd_pr__nfet_01v8_lvt L=2 W=5 nf=1 m=2
+XM34 net1 PBias Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=5 nf=1 m=4
+XM35 net1 net1 beta Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=10 nf=1 m=2
+XM36 net2 net1 Vss Vss sky130_fd_pr__nfet_01v8_lvt L=2 W=5 nf=1 m=2
+XM37 PBias NBias Vss Vss sky130_fd_pr__nfet_01v8_lvt L=2 W=5 nf=1 m=2
+XM38 PBias net2 Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=5 nf=1 m=4
+XM39 net2 net2 Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=5 nf=1 m=4
+XM40 PBias net3 NBias Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 m=1
+XM41 net3 NBias Vss Vss sky130_fd_pr__nfet_01v8_lvt L=2 W=5 nf=1 m=2
+XM42 net3 net3 Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=20 W=1 nf=1 m=2
+XM43 net12 Ebias Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=2
+XM44 net13 PBias Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=5 nf=1 m=4
+XM45 net14 Ebias Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=2
+XM54 net15 PBias Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=5 nf=1 m=4
+XC1 Vop1 Vom sky130_fd_pr__cap_mim_m3_1 W=10 L=10 m=5
+XC2 Vom1 Vop sky130_fd_pr__cap_mim_m3_1 W=10 L=10 m=5
+x1 net6 net5 net4 Vm Vp Vss Vdd Vref Vop1 Vom1 Diff_opamp
+x2 Vref net7 Vop1 Vom1 Vss Vdd Vop Vom Common_source_stage
+XM1 beta en_1 Rgm Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM2 Ebias en_2 Rgm Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM3 Ebias Ebias Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=2
+XM6 net8 Ebias Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=2
+XM7 net9 PBias Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=5 nf=1 m=4
+XM8 net10 Ebias Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=2
+XM9 net11 PBias Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=5 nf=1 m=4
+XM10 net8 en_2 net4 Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM11 net9 en_1 net4 Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM12 net10 en_2 net5 Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM13 net11 en_1 net5 Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM4 net12 en_2 net6 Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM5 net13 en_1 net6 Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM14 net14 en_2 net7 Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM15 net15 en_1 net7 Vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 m=1
+XM16 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=6
+XM17 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 m=16
+XM18 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=2 nf=1 m=12
+XM19 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=5 nf=1 m=16
+XM20 Vss Vss Vss Vss sky130_fd_pr__nfet_01v8_lvt L=2 W=5 nf=1 m=8
+XM21 Vss Vss Vss Vss sky130_fd_pr__nfet_01v8_lvt L=2 W=2 nf=1 m=12
+XC3 Vss Vss sky130_fd_pr__cap_mim_m3_1 W=10 L=5 m=4
+XC4 Vss Vss sky130_fd_pr__cap_mim_m3_1 W=5 L=10 m=10
+XC5 Vss Vss sky130_fd_pr__cap_mim_m3_1 W=5 L=5 m=4
+.ends
+
+* expanding   symbol:  /foss/designs/Opamp_Design/src/Diff_opamp.sym # of pins=10
+** sym_path: /foss/designs/Opamp_Design/src/Diff_opamp.sym
+** sch_path: /foss/designs/Opamp_Design/src/Diff_opamp.sch
+.subckt Diff_opamp Vbias3 Vbias2 Vbias1 Vm Vp Vss Vdd Vref Vop Vom
+*.PININFO Vss:I Vop:O Vdd:I Vp:I Vm:I Vref:I Vom:O Vbias1:I Vbias2:I Vbias3:I
+XM26 net1 Vm net3 Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=2 nf=1 m=10
+XM27 net2 Vp net3 Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=2 nf=1 m=10
+XM28 Vop Vbias net1 Vdd sky130_fd_pr__pfet_01v8_lvt L=10 W=0.5 nf=1 m=16
+XM29 Vom Vbias net2 Vdd sky130_fd_pr__pfet_01v8_lvt L=10 W=0.5 nf=1 m=16
+XM30 net1 Vout Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=5 W=1 nf=1 m=8
+XM31 net2 Vout Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=5 W=1 nf=1 m=8
+XM32 net3 Vbias2 net4 Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=1 nf=1 m=20
+XM33 net4 Vbias1 Vss Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=0.5 nf=1 m=4
+XM34 net5 Vbias1 Vss Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=0.5 nf=1 m=4
+XM35 net3 Vbias2 net5 Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=1 nf=1 m=20
+XM36 Vop Vbias2 net6 Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=1 nf=1 m=20
+XM37 net6 Vbias1 Vss Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=0.5 nf=1 m=4
+XM38 Vom Vbias2 net7 Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=1 nf=1 m=20
+XM39 net7 Vbias1 Vss Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=0.5 nf=1 m=4
+XM40 Vout Vref net9 Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=0.5 nf=1 m=10
+XM41 net10 Vop net9 Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=0.5 nf=1 m=10
+XM42 net10 Vom net8 Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=0.5 nf=1 m=10
+XM43 net8 Vbias1 Vss Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=0.5 nf=1 m=2
+XM44 net10 net10 Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=10 W=1 nf=1 m=2
+XM45 Vout net10 Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=10 W=1 nf=1 m=2
+XM48 net9 Vbias1 Vss Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=0.5 nf=1 m=2
+XM49 Vout Vref net8 Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=0.5 nf=1 m=10
+XM50 Vbias1 Vbias1 Vss Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=0.5 nf=1 m=20
+XM51 Vbias2 Vbias2 Vss Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=1 nf=1 m=2
+XM52 Vbias3 Vbias3 Vss Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=0.6 nf=1 m=2
+XM53 Vbias Vbias3 Vss Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=0.6 nf=1 m=2
+XM54 Vbias Vbias Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=10 W=0.5 nf=1 m=6
+XM55 Vss Vss Vss Vss sky130_fd_pr__nfet_01v8_lvt L=0.5 W=0.5 nf=1 m=44
+XM56 Vss Vss Vss Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=0.5 nf=1 m=4
+XM57 Vss Vss Vss Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 m=46
+XM58 Vss Vss Vss Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=1 nf=1 m=10
+XM59 Vss Vss Vss Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 m=24
+XM60 Vss Vss Vss Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=2 nf=1 m=4
+XM61 Vss Vss Vss Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=0.6 nf=1 m=14
+XM62 Vss Vss Vss Vss sky130_fd_pr__nfet_01v8_lvt L=0.5 W=0.5 nf=1 m=24
+XM63 Vss Vss Vss Vss sky130_fd_pr__nfet_01v8_lvt L=10 W=0.5 nf=1 m=8
+XM64 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=0.5 W=0.5 nf=1 m=44
+XM65 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 m=32
+XM66 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=10 W=0.5 nf=1 m=6
+XM67 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=5 W=1 nf=1 m=4
+XM68 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=10 W=1 nf=1 m=2
+.ends
+
+
+* expanding   symbol:  /foss/designs/Opamp_Design/src/Common_source_stage.sym # of pins=8
+** sym_path: /foss/designs/Opamp_Design/src/Common_source_stage.sym
+** sch_path: /foss/designs/Opamp_Design/src/Common_source_stage.sch
+.subckt Common_source_stage Vref Vbias Vomin Vopin Vss Vdd Vop Vom
+*.PININFO Vdd:I Vop:O Vss:I Vom:O Vopin:I Vomin:I Vbias:I Vref:I
+XM13 Vop Vopin Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=1 m=9
+XM14 Vom Vomin Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=1 m=9
+XM15 Vop Vout Vss Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 m=9
+XM16 Vom Vout Vss Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 m=9
+XM17 net1 Vbiasp Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=5 W=1 nf=1 m=2
+XM18 Vtest Vcm net1 Vdd sky130_fd_pr__pfet_01v8_lvt L=10 W=0.5 nf=1 m=4
+XM19 Vout Vref net1 Vdd sky130_fd_pr__pfet_01v8_lvt L=10 W=0.5 nf=1 m=4
+XM20 Vtest Vtest Vss Vss sky130_fd_pr__nfet_01v8_lvt L=20 W=0.5 nf=1 m=2
+XM21 Vout Vtest Vss Vss sky130_fd_pr__nfet_01v8_lvt L=20 W=0.5 nf=1 m=2
+x3 Vop Vcm res_pack
+x4 Vcm Vom res_pack
+XM22 Vbias Vbias Vss Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=0.6 nf=1 m=2
+XM23 Vbiasp Vbias Vss Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=0.6 nf=1 m=2
+XM24 Vbiasp Vbiasp Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=5 W=1 nf=1 m=60
+XM25 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=1 m=12
+XM26 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 m=10
+XM27 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=0.5 W=0.5 nf=1 m=12
+XM28 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=10 W=0.5 nf=1 m=4
+XM29 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=5 W=1 nf=1 m=18
+XM30 Vdd Vdd Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=0.5 W=1 nf=1 m=20
+XM31 Vss Vss Vss Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 m=22
+XM32 Vss Vss Vss Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=0.6 nf=1 m=14
+XM33 Vss Vss Vss Vss sky130_fd_pr__nfet_01v8_lvt L=20 W=0.5 nf=1 m=2
+XM34 Vss Vss Vss Vss sky130_fd_pr__nfet_01v8_lvt L=0.5 W=0.5 nf=1 m=12
+.ends
+
+
+* expanding   symbol:  /foss/designs/FYP/Sky130_Design/Sky130_Design/Opamp_Design/src/res_pack.sym # of pins=2
+** sym_path: /foss/designs/FYP/Sky130_Design/Sky130_Design/Opamp_Design/src/res_pack.sym
+** sch_path: /foss/designs/FYP/Sky130_Design/Sky130_Design/Opamp_Design/src/res_pack.sch
+.subckt res_pack Vin Vout
+*.PININFO Vin:I Vout:O
+XR1 net4 Vin sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR2 net5 net4 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR3 net6 net5 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR4 net7 net6 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR5 net1 net7 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR6 net8 net2 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR7 net9 net8 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR8 net10 net9 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR9 net11 net10 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR10 net1 net11 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR11 net12 net2 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR12 net13 net12 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR13 net14 net13 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR14 net15 net14 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR16 net16 Vout sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR17 net17 net16 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR18 net18 net17 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR19 net19 net18 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR20 net3 net19 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+XR15 net3 net15 sky130_fd_pr__res_generic_po W=0.5 L=40 m=1
+.ends
+
+.end

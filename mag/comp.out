@@ -1,0 +1,169 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__nfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8_lvt     |Circuit 2: sky130_fd_pr__nfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_lvt     |Circuit 2: sky130_fd_pr__pfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_generic_po and Circuit 2 cell sky130_fd_pr__res_generic_po are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_generic_po is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_generic_po is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_generic_po    |Circuit 2: sky130_fd_pr__res_generic_po    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_generic_po and sky130_fd_pr__res_generic_po are equivalent.
+Flattening unmatched subcell Diff_opamp in circuit opamp_with_external_current_source (0)(1 instance)
+Flattening unmatched subcell Common_source_stage in circuit opamp_with_external_current_source (0)(1 instance)
+Flattening unmatched subcell res_pack in circuit opamp_with_external_current_source (0)(2 instances)
+Flattening unmatched subcell x2stage_op_amp in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell cs_p_5 in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_MTZNSY in circuit op_amp_lvs_final (1)(20 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_KVZN99 in circuit op_amp_lvs_final (1)(80 instances)
+Flattening unmatched subcell block03 in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_BX6RT7 in circuit op_amp_lvs_final (1)(12 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_N42WW9 in circuit op_amp_lvs_final (1)(6 instances)
+Flattening unmatched subcell block01 in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_J88B3D in circuit op_amp_lvs_final (1)(30 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_J8833D in circuit op_amp_lvs_final (1)(10 instances)
+Flattening unmatched subcell nmos_08 in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_LTPL8U in circuit op_amp_lvs_final (1)(18 instances)
+Flattening unmatched subcell block02 in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_34DASA in circuit op_amp_lvs_final (1)(40 instances)
+Flattening unmatched subcell cap in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_MYAC2F in circuit op_amp_lvs_final (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_DP2CMY in circuit op_amp_lvs_final (1)(10 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_G6WD7P in circuit op_amp_lvs_final (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_GQMTM9 in circuit op_amp_lvs_final (1)(9 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_B9M9HY in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell res in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_generic_po_RETGBZ in circuit op_amp_lvs_final (1)(40 instances)
+Flattening unmatched subcell block04 in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_LHHU6U in circuit op_amp_lvs_final (1)(12 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_W2HEQA in circuit op_amp_lvs_final (1)(12 instances)
+Flattening unmatched subcell switchblock in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_6DE3T6 in circuit op_amp_lvs_final (1)(10 instances)
+Flattening unmatched subcell switchblock01 in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_J8833D in circuit op_amp_lvs_final (1)(16 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_U8838H in circuit op_amp_lvs_final (1)(16 instances)
+Flattening unmatched subcell bias_dummy in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_NVX44G in circuit op_amp_lvs_final (1)(47 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_LVXMRT in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_ZVWESF in circuit op_amp_lvs_final (1)(24 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_2QSR6E in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_JY4D7E in circuit op_amp_lvs_final (1)(11 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_VYCASF in circuit op_amp_lvs_final (1)(11 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_V2BN2G in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_UY454G in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_9UXMRD in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_PAU7SL in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell Diff_opamp_ly in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell diff_in_03 in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_VVFJJL in circuit op_amp_lvs_final (1)(24 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_ND6TEZ in circuit op_amp_lvs_final (1)(24 instances)
+Flattening unmatched subcell nmos_08 in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_LTPL8U in circuit op_amp_lvs_final (1)(18 instances)
+Flattening unmatched subcell pmos_07 in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_76U4T2 in circuit op_amp_lvs_final (1)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_KVZWZ9 in circuit op_amp_lvs_final (1)(12 instances)
+Flattening unmatched subcell pmos_05 in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_RSMGKB in circuit op_amp_lvs_final (1)(44 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_RSW4TG in circuit op_amp_lvs_final (1)(44 instances)
+Flattening unmatched subcell diff_in_04 in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_G235U9 in circuit op_amp_lvs_final (1)(48 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_QGYFYD in circuit op_amp_lvs_final (1)(24 instances)
+Flattening unmatched subcell nmos_cl_02 in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_F22EEM in circuit op_amp_lvs_final (1)(92 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_6WKBEZ in circuit op_amp_lvs_final (1)(46 instances)
+Flattening unmatched subcell pmos_06 in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_KVZN99 in circuit op_amp_lvs_final (1)(20 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_KVZWZ9 in circuit op_amp_lvs_final (1)(20 instances)
+Flattening unmatched subcell nmos_cload_01 in circuit op_amp_lvs_final (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_G235U9 in circuit op_amp_lvs_final (1)(44 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_QGGREF in circuit op_amp_lvs_final (1)(44 instances)
+
+Class opamp_with_external_current_source (0):  Merged 30 parallel devices.
+Class opamp_with_external_current_source (0):  Merged 38 series devices.
+Class op_amp_lvs_final (1):  Merged 845 parallel devices.
+Class op_amp_lvs_final (1):  Merged 38 series devices.
+Subcircuit summary:
+Circuit 1: opamp_with_external_current_sou |Circuit 2: op_amp_lvs_final                
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_lvt (404->28)      |sky130_fd_pr__pfet_01v8_lvt (404->28)      
+sky130_fd_pr__nfet_01v8_lvt (481->43)      |sky130_fd_pr__nfet_01v8_lvt (487->43)      
+sky130_fd_pr__cap_mim_m3_1 (28->3)         |sky130_fd_pr__cap_mim_m3_1 (28->3)         
+sky130_fd_pr__res_generic_po (40->2)       |sky130_fd_pr__res_generic_po (40->2)       
+Number of devices: 76                      |Number of devices: 76                      
+Number of nets: 48                         |Number of nets: 48                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 3 symmetries with property errors.
+sky130_fd_pr__nfet_01v8_lvt:M35 vs. x2stage_op_amp:2stage_op_amp_1//bias_dummy_0/sky130_fd_pr__nfet_01v8_lvt_ZVWESF:M35_A/sky130_fd_pr__nfet_01v8_lvt:0:
+ W circuit1: 20   circuit2: 40   (delta=66.7%, cutoff=1%)
+ L circuit1: 1   circuit2: 2   (delta=66.7%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: opamp_with_external_current_sou |Circuit 2: op_amp_lvs_final                
+-------------------------------------------|-------------------------------------------
+Vref                                       |Vref                                       
+Vp                                         |Vp                                         
+Vm                                         |Vm                                         
+en_2                                       |en_2                                       
+en_1                                       |en_1                                       
+Rgm                                        |Rgm                                        
+Vop                                        |Vop                                        
+Vom                                        |Vom                                        
+Vss                                        |Vss                                        
+Vdd                                        |Vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes opamp_with_external_current_source and op_amp_lvs_final are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ opamp_with_external_current_source
